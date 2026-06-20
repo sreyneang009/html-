@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: azure;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+
+        }
+
+        .container {
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            background-color: cadetblue;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgb(rgb(48, 234, 255), );
+            justify-content: center;
+
+        }
+
+        button {
+            margin-left: 200px;
+            font-size: 15px;
+
+
+
+        }
+
+        button:hover {
+            background: violet;
+        }
+
+        button:active {
+            transform: scale(1.00);
+        }
+
+        input:focus {
+            border: 1px solid blue;
+        }
+
+        input[type="checkbox"]:checked {
+            accent-color: teal;
+        }
+
+        input:disabled {
+            opacity: 0.5;
+        }
+
+        input:enabled {
+            border: 1px solid gray;
+        }
+
+        input:required {
+            border-left: 3px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Personal information</h1>
+        <div>
+            <label for="">Username</label><br>
+            <input type="text" placeholder="Enter yourname"><br><br>
+        </div>
+        <div>
+            <label for="">Email</label><br>
+            <input type="email" placeholder="Enter youremail"><br><br>
+        </div>
+        <div>
+            <label for="">password</label><br>
+            <input type="password" placeholder="Enter your password"><br><br>
+        </div>
+        <div>
+            <label for="">Phonenumber</label><br>
+            <input type="number" placeholder="phone number"><br><br>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="">i agree to the terms and coditions</label><br>
+
+        </div>
+        <button>Submit</button>
+
+
+    </div>
+</body>
+
+</html>

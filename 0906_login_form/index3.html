@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        p::first-line {
+            color: red;
+            font-weight: bold;
+        }
+
+        .text::selection {
+            font-weight: bold;
+            color: rgb(24, 195, 121);
+        }
+
+        input::placeholder {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        li::marker {
+            content: "*";
+            color: burlywood;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium molestias quis quisquam quod accusantium
+        delectus unde voluptatum, ipsum voluptates aliquam placeat. Porro fugiat nulla pariatur aliquam explicabo? Nemo,
+        laborum fugiat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus omnis dolorum ea eligendi. Consequuntur quos
+        vitae delectus, omnis, aut illo, ab iure soluta qui sed tenetur reiciendis autem blanditiis quibusdam.</p>
+    <div class="text">Input placeholder</div>
+    <input type=" text" placeholder="enter username">
+    <h3>list with marker adjustment</h3>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</p>
+        <li>Item3</li>
+    </ul>
+
+
+
+</body>
+
+</html>
