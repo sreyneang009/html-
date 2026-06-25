@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Assignment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            justify-content: space-between;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .navbar h2 {
+            font-size: 15px;
+            color: white;
+
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 10px;
+
+
+        }
+
+        .hero {
+            width: 100%;
+            height: 180px;
+            background-color: rgb(199, 199, 188);
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero .hero-text {
+            font-size: 10px;
+            margin: 20px;
+        }
+
+        .hero-text h1 {
+            margin: 10px;
+        }
+
+        .hero-text p {
+            margin: 10px;
+        }
+
+        .hero-text button {
+            color: white;
+            background-color: #1e90ff;
+            width: 100px;
+            height: 25px;
+            border: white;
+        }
+
+        .hero-image {
+            width: 180px;
+            height: 130px;
+            margin: 30px;
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: center;
+            background-color: rgb(220, 211, 211);
+        }
+
+        .features h2 {
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            margin: 15px;
+
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .card {
+            width: 180px;
+            height: 80px;
+            border: 1px solid #ccc;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+
+        }
+
+        h3 {
+            justify-content: center;
+            font-size: 15px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>My Website</h2>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Learn Flexbox</h1>
+            <p>
+                Flexbox is a powerful CSS layout module that helps
+                align and distribute space among items <br> efficiently.
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+
+        <div class="hero-image">
+            Image Placeholder
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature-container">
+            <div class="card">
+                <h3>Fast</h3>
+                <p>Build responsive layouts quickly with Flexbox.</p>
+            </div>
+
+            <div class="card">
+                <h3>Easy</h3>
+                <p>Simple syntax and powerful alignment options.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive</h3>
+                <p>Works well on desktop, tablet, and mobile devices.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
